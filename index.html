@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pipipig Cat Daily Record</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        form { margin-top: 20px; }
-        input, textarea, select { margin: 10px 0; width: 100%; padding: 10px; }
-    </style>
+    <title>Cat Daily Record</title>
 </head>
 <body>
-    <h1>Pipipig Cat Daily Record</h1>
-    <form action="#" method="post">
-        <label for="catName">Cat Name:</label>
-        <input type="text" id="catName" name="catName" required>
-
+    <h1>Cat Daily Record</h1>
+    <form>
         <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="activity">Activity:</label>
+        <input type="text" id="activity" name="activity" required><br><br>
 
         <label for="mood">Mood:</label>
         <select id="mood" name="mood">
             <option value="happy">Happy</option>
-            <option value="sad">Sad</option>
             <option value="playful">Playful</option>
             <option value="sleepy">Sleepy</option>
-        </select>
+            <option value="hungry">Hungry</option>
+            <option value="sick">Sick</option>
+        </select><br><br>
 
-        <label for="activities">Activities:</label>
-        <textarea id="activities" name="activities" rows="4" placeholder="Describe the activities..." required></textarea>
+        <label for="appetite">Appetite:</label>
+        <select id="appetite" name="appetite">
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select><br><br>
+
+        <label for="health">Health Status:</label>
+        <input type="text" id="health" name="health" required><br><br>
 
         <input type="submit" value="Submit">
     </form>
