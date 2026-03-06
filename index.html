@@ -3,37 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Daily Record</title>
+    <title>Cat Daily Record Application</title>
 </head>
 <body>
-    <h1>Cat Daily Record</h1>
-    <form>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required><br><br>
-
-        <label for="activity">Activity:</label>
-        <input type="text" id="activity" name="activity" required><br><br>
-
-        <label for="mood">Mood:</label>
-        <select id="mood" name="mood">
-            <option value="happy">Happy</option>
-            <option value="playful">Playful</option>
-            <option value="sleepy">Sleepy</option>
-            <option value="hungry">Hungry</option>
-            <option value="sick">Sick</option>
-        </select><br><br>
-
-        <label for="appetite">Appetite:</label>
-        <select id="appetite" name="appetite">
-            <option value="good">Good</option>
-            <option value="average">Average</option>
-            <option value="poor">Poor</option>
-        </select><br><br>
-
-        <label for="health">Health Status:</label>
-        <input type="text" id="health" name="health" required><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
+    <header>
+        <h1>Welcome to the Cat Daily Record Application</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Daily Records</h2>
+            <form>
+                <label for="catName">Cat Name:</label>
+                <input type="text" id="catName" name="catName" required>
+                <label for="recordDate">Date:</label>
+                <input type="date" id="recordDate" name="recordDate" required>
+                <label for="recordNotes">Notes:</label><br>
+                <textarea id="recordNotes" name="recordNotes" rows="4" required></textarea><br>
+                <input type="submit" value="Submit Record">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Cat Daily Record Application</p>
+    </footer>
 </body>
 </html>
